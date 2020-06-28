@@ -1,5 +1,6 @@
 import express from 'express';
 import routes from './routes';
+import './database/migrations'
 
 const PORT = process.env.PORT || 3333;
 const app = express();
