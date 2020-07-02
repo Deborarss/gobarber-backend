@@ -11,7 +11,8 @@ usersRouter.get('/', (request, response) => {
 usersRouter.post('/', async (request, response) => {
   try {
     const { name, email, password } = request.body;
-  
+    const auth = request.headers.authorization;
+        
     const createUser = new CreateUserService();
 
     const user = await createUser.execute({ 
