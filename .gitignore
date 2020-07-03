@@ -3,6 +3,9 @@
 /.pnp
 .pnp.js
 ormconfig.json
+tmp/*
+!tmp/.gitkeep
+temp/
 
 # testing
 /coverage
